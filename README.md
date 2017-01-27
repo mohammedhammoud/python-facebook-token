@@ -23,10 +23,10 @@ results = ftr.refresh()
 ```
 
 ### Results with status code 200
-```json
+```
 {
 	'access_token': 'EAAJ9Xx55SZA0BAKt4QswTRq7CFx0V4a9Ria1DrOlP36rtyJDUZAOmIdMaO7LZBTInDUaN7jnIgckxwy5FYApzqrpYYhbM5rsBSzx9TLZAdKrFk9BRDCw6foj07dEYkQhbPq8TYYeRYqDeLutgwB4hbVyYSes43AZD',
-	'expires': u'5179894'
+	'expires': '5179894'
 }
 ```
 
