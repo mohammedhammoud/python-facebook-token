@@ -1,5 +1,4 @@
 import requests
-from urlparse import parse_qsl, urlparse
 import json
 
 
@@ -26,7 +25,7 @@ class FacebookTokenRefresher:
         r = requests.get(self.base_url, params=params)
 
         if r.status_code == 200:
-            return dict(parse_qsl(r.text))
+            return r.json()
         else:
             if raise_exception:
                 raise FacebookTokenRefresherException(json.dumps(r.json(), indent=4))
